@@ -1,0 +1,31 @@
+[
+  {
+    "claim_number": "CLM-2015-5095075",
+    "policy_id": "AUT-2015-WI-541317",
+    "vehicle_class": "suv_crossover",
+    "vehicle_age_years": 1,
+    "actual_cash_value_usd": 29153.05,
+    "vehicles_involved_count": 2,
+    "hit_and_run_flag": false,
+    "police_report_filed": false,
+    "fnol_delay_days": 9,
+    "at_fault_pct_insured": 0.0,
+    "injury_severity_code": "B_non_incapacitating",
+    "injuries_count_claimant": 1,
+    "total_medical_cost_usd": 3384.55,
+    "bi_gross_claim_usd": 14163.41,
+    "attorney_represented": false,
+    "gross_vehicle_damage_usd": 20104.64,
+    "age": 36,
+    "years_licensed": 20,
+    "mvr_points": 0,
+    "mvr_violations_3yr": 0,
+    "at_fault_accidents_3yr": 0,
+    "credit_score": 819,
+    "insurance_score": 854,
+    "annual_mileage": 26865,
+    "dui_flag": false,
+    "annual_premium_usd": 3479.87,
+    "telematics_enrolled": false
+  }
+]

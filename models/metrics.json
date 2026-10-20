@@ -1,0 +1,101 @@
+{
+  "n_claims": 5000,
+  "n_positive": 31,
+  "base_rate_pct": 0.62,
+  "selected_model": "Logistic Regression",
+  "review_budget": 0.03,
+  "cv": "3 x 5-fold stratified",
+  "candidates": {
+    "Logistic Regression": {
+      "mean": {
+        "roc_auc": 0.9368,
+        "pr_auc": 0.6128,
+        "recall_at_budget": 0.6774,
+        "precision_at_budget": 0.14
+      },
+      "std": {
+        "roc_auc": 0.0063,
+        "pr_auc": 0.0059,
+        "recall_at_budget": 0.0,
+        "precision_at_budget": 0.0
+      }
+    },
+    "Random Forest": {
+      "mean": {
+        "roc_auc": 0.9287,
+        "pr_auc": 0.5917,
+        "recall_at_budget": 0.6559,
+        "precision_at_budget": 0.1356
+      },
+      "std": {
+        "roc_auc": 0.0251,
+        "pr_auc": 0.0047,
+        "recall_at_budget": 0.0186,
+        "precision_at_budget": 0.0038
+      }
+    }
+  },
+  "top_features": [
+    [
+      "damage_vs_peer",
+      0.0735
+    ],
+    [
+      "attorney_represented",
+      0.0729
+    ],
+    [
+      "ubi_score",
+      0.0628
+    ],
+    [
+      "injuries_count_claimant",
+      0.06
+    ],
+    [
+      "total_medical_cost_usd",
+      0.0566
+    ],
+    [
+      "telematics_enrolled",
+      0.0559
+    ],
+    [
+      "fnol_delay_days",
+      0.0548
+    ],
+    [
+      "gross_vehicle_damage_usd",
+      0.0541
+    ],
+    [
+      "credit_score",
+      0.0492
+    ],
+    [
+      "annual_premium_usd",
+      0.045
+    ]
+  ],
+  "rule_coverage": {
+    "attorney_no_injury_claims": 17,
+    "of_which_siu": 17,
+    "siu_total": 31
+  },
+  "leakage_check": {
+    "fraud_score_threshold_match_pct": 100.0,
+    "fraud_suspected_flag_positives": 0
+  },
+  "excluded_columns": [
+    "fraud_score",
+    "fraud_suspected_flag",
+    "claim_status",
+    "litigation_flag",
+    "settlement_days",
+    "alae_usd",
+    "case_reserve_usd",
+    "paid_to_date_usd",
+    "total_gross_incurred_loss_usd",
+    "loss_development_factor_*"
+  ]
+}

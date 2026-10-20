@@ -1,0 +1,16 @@
+# Python environment and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local artifacts
+*.log
+.DS_Store
+Thumbs.db
